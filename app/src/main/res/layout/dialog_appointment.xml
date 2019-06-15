@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:text="Doctor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVDoctor"
+            android:textSize="15sp"
+            android:layout_below="@+id/spnEspeciality"
+            android:layout_alignStart="@+id/spnDoctor"
+            android:layout_alignEnd="@+id/txtVEspeciality" />
+
+        <Spinner
+            android:id="@+id/spnDoctor"
+            android:spinnerMode="dialog"
+            android:layout_height="40dp"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            android:contextClickable="true"
+            android:layout_width="250dp"
+            android:layout_below="@+id/txtVDoctor"
+            android:layout_centerHorizontal="true" />
+
+        <Spinner
+            android:layout_width="250dp"
+            android:id="@+id/spnEspeciality"
+            android:spinnerMode="dialog"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtVEspeciality"
+            android:layout_alignStart="@+id/txtVDoctor"
+            android:entries="@array/epecialities"/>
+
+        <Spinner
+            android:layout_width="250dp"
+            android:id="@+id/spnPatient"
+            android:spinnerMode="dialog"
+            android:layout_height="40dp"
+            android:layout_below="@+id/txtVUser"
+            android:layout_alignStart="@+id/spnDoctor" />
+
+        <TextView
+            android:text="Especialidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVEspeciality"
+            android:textSize="15sp"
+            android:layout_below="@+id/spnPatient"
+            android:layout_alignStart="@+id/spnPatient" />
+
+        <TextView
+            android:text="Paciente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVUser"
+            android:textSize="15sp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/spnPatient" />
+
+        <TextView
+            android:text="Hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView"
+            android:layout_below="@+id/txtDate"
+            android:layout_alignStart="@+id/txtDate" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/txtDate"
+            android:hint="@string/to_date"
+            android:layout_below="@+id/txtVDate"
+            android:layout_alignStart="@+id/txtVDate" />
+
+        <TextView
+            android:text="Fecha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtVDate"
+            android:textSize="15sp"
+            android:layout_below="@+id/spnDoctor"
+            android:layout_alignStart="@+id/spnDoctor" />
+
+        <Spinner
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:id="@+id/spnHour"
+            android:layout_below="@+id/textView"
+            android:layout_alignStart="@+id/textView"
+            android:entries="@array/hours"
+            android:spinnerMode="dialog" />
+
+    </RelativeLayout>
+
+</ScrollView>

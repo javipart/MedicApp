@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- El orderInCategory es la posición en la que se muestra. Va de 100 en 100. El 100 será el primero
+     El 200 el segundo y así sustantivamente -->
+
+    <item
+        android:id="@+id/create"
+        android:icon="@drawable/plus"
+        android:orderInCategory="100"
+        android:title="Nuevo"
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/createDoctor"
+                android:orderInCategory="100"
+                android:title="Añadir doctor" />
+            <item
+                android:id="@+id/createUser"
+                android:orderInCategory="200"
+                android:title="Añadir paciente" />
+            <item
+                android:id="@+id/createAppointment"
+                android:orderInCategory="300"
+                android:title="Añadir cita" />
+        </menu>
+
+    </item>
+
+</menu>

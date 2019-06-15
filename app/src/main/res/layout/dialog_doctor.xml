@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Spinner
+            android:layout_height="40dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/spnEspeciality"
+            android:layout_marginTop="22dp"
+            android:hint="Especialidad"
+            android:layout_width="250dp"
+            android:layout_below="@+id/txtNameUser"
+            android:layout_alignStart="@+id/txtNameUser"
+            android:entries="@array/epecialities"
+            android:spinnerMode="dialog"/>
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtProfesionalCard"
+            android:layout_marginTop="20dp"
+            android:hint="Tarjeta Profesional"
+            android:layout_width="250dp"
+            android:layout_below="@+id/spnEspeciality"
+            android:layout_alignStart="@+id/spnEspeciality" />
+
+        <EditText
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtNameUser"
+            android:hint="Nombre"
+            android:layout_width="250dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</ScrollView>

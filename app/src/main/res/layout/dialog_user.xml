@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txtNameUser"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:hint="Nombre" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:id="@+id/txtId"
+            android:layout_below="@+id/txtNameUser"
+            android:layout_alignStart="@+id/txtNameUser"
+            android:layout_marginTop="21dp"
+            android:hint="Identificacion"
+            android:inputType="number" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/txtPhone"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/txtId"
+            android:layout_alignStart="@+id/txtId"
+            android:hint="Telefono" />
+
+        <Spinner
+            android:layout_height="30dp"
+            android:id="@+id/spnEps"
+            android:layout_width="160dp"
+            android:layout_marginTop="19dp"
+            android:layout_below="@+id/txtPhone"
+            android:entries="@array/eps"
+            android:layout_alignStart="@+id/txtPhone"
+            android:layout_alignEnd="@+id/txtPhone"
+            android:spinnerMode="dialog" />
+    </RelativeLayout>
+
+</ScrollView>

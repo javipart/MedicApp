@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="epecialities">
+        <item>Cardiologia</item>
+        <item>Dermatologia</item>
+        <item>Medicina General</item>
+        <item>Nefrologia</item>
+        <item>Oftalmologia</item>
+        <item>Psiquiatria</item>
+        <item>Nutriologia</item>
+        <item>Ortopedia</item>
+        <item>Laboratorio</item>
+    </string-array>
+    <string-array name="eps">
+        <item>Nueva EPS</item>
+        <item>CafeSalud</item>
+        <item>Comparta</item>
+        <item>Colsubsidio</item>
+        <item>Sanitas</item>
+        <item>Salud Total</item>
+    </string-array>
+    <string-array name="hours">
+
+        <item>08:00</item>
+        <item>08:15</item>
+        <item>08:30</item>
+        <item>08:45</item>
+        <item>09:00</item>
+        <item>09:15</item>
+        <item>09:30</item>
+        <item>09:45</item>
+        <item>10:00</item>
+        <item>10:15</item>
+        <item>10:30</item>
+        <item>10:45</item>
+        <item>11:00</item>
+        <item>11:15</item>
+        <item>11:30</item>
+        <item>11:45</item>
+        <item>14:00</item>
+        <item>14:15</item>
+        <item>14:30</item>
+        <item>14:45</item>
+        <item>15:00</item>
+        <item>15:15</item>
+        <item>15:30</item>
+        <item>15:45</item>
+    </string-array>
+</resources>
